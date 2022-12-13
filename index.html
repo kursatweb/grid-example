@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        
+        @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            font-size: 20px;
+        }
+        
+        .grid-container {
+            display: grid;
+            grid-template-columns: 25% 25% 25% 25%;
+            background-color: rgb(224, 121, 121);
+        }
+
+        .grid-item {
+            color: white;
+            padding: 100px;
+            border-right: solid 2px black;
+            border-bottom: solid 2px black;
+            text-align: center;
+        }
+    
+        @media (max-width: 1200px) {
+            .grid-container {
+               grid-template-columns: auto auto auto;
+            }
+        }
+        
+        @media (max-width: 800px) {
+            .grid-container {
+               grid-template-columns: 50% 50%;
+            }
+        }
+
+        @media (max-width: 450px) {
+            .grid-container {
+               grid-template-columns: auto;
+               text-align: center;
+            }
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item">Asdas</div>
+        <div class="grid-item">Asdas</div>
+        <div class="grid-item">Asdas</div>
+        <div class="grid-item">Asdas</div>
+        <div class="grid-item">Asdas</div>
+        <div class="grid-item">Asdas</div>
+        <div class="grid-item">Asdas</div>
+        <div class="grid-item">Asdas</div>
+        <div class="grid-item">Asdas</div>
+        <div class="grid-item">Asdas</div>
+        <div class="grid-item">Asdas</div>
+        <div class="grid-item">Asdas</div>
+    </div>
+</body>
+</html>
